@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+{% block main-content %}
+    <article>
+        <div>
+            <form method="post" action="{% url 'show delete review' rev.id %}">
+                {% csrf_token %}
+                {{ form }}
+
+                <button type="submit" class="btn btn-outline-success">Delete</button>
+
+            </form>
+        </div>
+    </article>
+
+{% endblock %}

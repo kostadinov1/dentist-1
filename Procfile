@@ -1,0 +1,1 @@
+web: gunicorn dentist_2_project.wsgi
